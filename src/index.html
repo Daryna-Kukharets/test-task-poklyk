@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/import.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__block">
+        <h1 class="header__title">CRM для бізнесу</h1>
+        <h2 class="header__subtitle">CRM для малого бізнесу</h2>
+        <p class="header__text">
+          Повний набір інструментів, що наводить лад у бізнесі, автоматизує
+          процеси і гарантовано позбавляє від “людського фактору”
+        </p>
+        <ul class="header__list list">
+          <li class="list__item">Інтеграція месенджерів та соцмереж</li>
+          <li class="list__item">Онлайн-запис клієнтів у календарі</li>
+          <li class="list__item">Мобільні додатки для всієї команди</li>
+        </ul>
+        <div class="header__buttons">
+          <a href="#" class="header__button button button--green">
+            Спробувати безкоштовно
+          </a>
+          <a href="#" class="header__button button button--blue">
+            Замовити демо
+          </a>
+        </div>
+      </div>
+      <picture>
+        <source
+          srcset="images/header_mobile.jpg"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="images/header_tablet.jpg"
+          media="(max-width: 1139px)"
+        />
+        <img
+          src="images/header_desktop.jpg"
+          alt="header-img"
+          class="header__img"
+        />
+      </picture>
+    </header>
+
+    <main class="main">
+      <section class="main__opports opports">
+        <div class="opports__box">
+          <h2 class="opports__title">
+            Можливості CRM для малого
+            <br />бізнесу будь-якої сфери
+          </h2>
+          <div class="opports__cards">
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--red"></span>
+                <svg width="20" height="18" class="opports__svg">
+                  <use xlink:href="images/sprite.svg#clients"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Клієнти</p>
+            </div>
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--blue"></span>
+                <svg width="18" height="18">
+                  <use xlink:href="images/sprite.svg#order"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Замовлення</p>
+            </div>
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--green"></span>
+                <svg width="19" height="18">
+                  <use xlink:href="images/sprite.svg#lead"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Ліди</p>
+            </div>
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--blue"></span>
+                <svg width="20" height="14">
+                  <use xlink:href="images/sprite.svg#payments"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Платежі</p>
+            </div>
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--grey"></span>
+                <svg width="18" height="18">
+                  <use xlink:href="images/sprite.svg#composition"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Склад</p>
+            </div>
+            <div class="opports__card">
+              <div class="opports__box-icon box-icon">
+                <span class="box-icon__circle box-icon__circle--yellow"></span>
+                <svg width="16" height="20">
+                  <use xlink:href="images/sprite.svg#estimates"></use>
+                </svg>
+              </div>
+              <p class="opports__text">Кошториси / КП</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__about about">
+        <div class="about__box">
+          <div class="about__content">
+            <div class="about__block-info">
+              <h2 class="about__title">CRM для обліку замовлень виробництва</h2>
+              <div class="about__paragraph">
+                <h3 class="about__subtitle">
+                  Оптимізоване управління замовленнями
+                </h3>
+                <p class="about__text">
+                  Фіксуйте кожну вхідну заявку та проводьте замовлення по всіх
+                  статусах вчасно — від ліда до відвантаження продукції.
+                  Зберігайте історію замовлень для зручного обслуговування та
+                  повторних продажів.
+                </p>
+              </div>
+              <div class="about__paragraph">
+                <h3 class="about__subtitle">Зручний розрахунок вартості</h3>
+                <p class="about__text">
+                  Формуйте набори матеріалів і послуг для виконання замовлення
+                  та швидко узгоджуйте кошториси із клієнтом. Налаштуйте зміну
+                  статусів та автоматичну передачу у виробництво.
+                </p>
+              </div>
+            </div>
+            <div class="about__block-img">
+              <img
+                src="images/about-bg.jpg"
+                alt="orders"
+                class="about__img-bg"
+              />
+              <img
+                src="images/about-scale.jpg"
+                alt="order"
+                class="about__img-scale about__img-scale--1"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="about__box">
+          <div class="about__content">
+            <div class="about__block-img about__block-img--2">
+              <img
+                src="images/about-bg-2.jpg"
+                alt="chats"
+                class="about__img-bg"
+              />
+              <img
+                src="images/about-scale-2.jpg"
+                alt="order"
+                class="about__img-scale about__img-scale--2"
+              />
+              <img
+                src="images/about-frame.jpg"
+                alt="client-card"
+                class="about__img-scale about__img-scale--3"
+              />
+            </div>
+            <div class="about__block-info">
+              <h2 class="about__title">
+                Спілкуйтеся зі своєю аудиторією через популярні месенджери
+              </h2>
+              <div class="about__paragraph">
+                <p class="about__text">
+                  Комунікація з клієнтами – це важлива складова успішних
+                  продажів. Не допускайте хаосу в комунікації, коли робоча
+                  переписка з клієнтами ведеться безконтрольно в особистих
+                  акаунтах. CRM рішення для малого бизнесу RemOnline інтегроване
+                  з усіма популярними месенджерами, щоб легко налаштувати
+                  автоматичні розсилки, а вся ручна комунікація велась в єдиній
+                  системі з доступною історією звернень.
+                </p>
+              </div>
+              <div class="about__paragraph">
+                <ul class="about__list list">
+                  <li class="list__item">
+                    Налаштуйте шаблони авто-відповідей і обробляйте вхідні
+                    звернення миттєво
+                  </li>
+                  <li class="list__item">
+                    Легко знаходьте історію спілкування в профілі клієнта
+                  </li>
+                  <li class="list__item">
+                    Створюйте замовлення безпосередньо з чатів
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__integrations integrations">
+        <h2 class="integrations__title">
+          Більша автоматизація з корисними <br />
+          інтеграціями
+        </h2>
+        <p class="integrations__subtitle">
+          Підключайте до RemOnline інші сервіси, щоб отримати доступ до нових
+          можливостей
+        </p>
+        <div class="integrations__cards">
+          <div class="integrations__card">
+            <div class="integrations__box-icon box-icon">
+              <span class="box-icon__circle box-icon__circle--red"></span>
+              <svg width="20" height="20" class="integrations__svg">
+                <use xlink:href="images/sprite.svg#telephone"></use>
+              </svg>
+            </div>
+            <h3 class="integrations__card-title">IP-телефонія</h3>
+            <p class="integrations__text">
+              Приймайте та прослуховуйте дзвінки, аби контролювати спілкування
+              адміністраторів салону з клієнтами
+            </p>
+          </div>
+          <div class="integrations__card">
+            <div class="integrations__box-icon box-icon">
+              <span class="box-icon__circle box-icon__circle--blue"></span>
+              <svg width="20" height="14">
+                <use xlink:href="images/sprite.svg#payments"></use>
+              </svg>
+            </div>
+            <h3 class="integrations__card-title">Онлайн-каси та пРРО</h3>
+            <p class="integrations__text">
+              Автоматизуйте друк і відправку електронних чеків разом із
+              Вчасно.Каса, Checkbox або Datecs
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__box">
+        <div class="footer__block-text">
+          <h3 class="footer__title">
+            Керуйте виробничими процесами без зайвих труднощів
+          </h3>
+          <p class="footer__text">
+            Програма для автоматизації обліку виробництва дозволить зосередитися
+            на розвитку бізнесу.
+          </p>
+        </div>
+        <a href="#" class="footer__button button button--yellow"> Почати зараз </a>
+      </div>
+    </footer>
+  </body>
+</html>

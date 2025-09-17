@@ -1,0 +1,54 @@
+@use "../../styles/utils" as *;
+
+.button {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  color: $white-color;
+  height: 64px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid transparent;
+
+  @include on-tablet {
+    font-size: 18px;
+  }
+
+  &--green {
+    width: 300px;
+    background-color: $green-color;
+
+    @include hover(
+      background-color $white-color,
+      color $green-color,
+      border-color $green-color
+    );
+  }
+
+  &--blue {
+    width: 210px;
+    background-color: $blue-color;
+
+    @include hover(
+      background-color $white-color,
+      color $blue-color,
+      border-color $blue-color
+    );
+  }
+
+  &--yellow {
+    width: 263px;
+    height: 61px;
+    color: $title-color;
+    background-color: $yellow-color;
+
+    @include hover(
+      background-color $blue-color,
+      color $yellow-color,
+      border-color $yellow-color
+    );
+  }
+}

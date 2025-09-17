@@ -1,0 +1,45 @@
+@use "../../styles/utils" as *;
+
+.box-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+
+  @include on-tablet {
+    width: 50px;
+    height: 50px;
+  }
+
+  & svg {
+    grid-area: 1 / 1;
+  }
+
+  &__circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 20%;
+    grid-area: 1 / 1;
+
+    &--red {
+      background-color: $opports-red;
+    }
+
+    &--blue {
+      background-color: $opports-blue;
+    }
+
+    &--green {
+      background-color: $opports-green;
+    }
+
+    &--grey {
+      background-color: $opports-grey;
+    }
+
+    &--yellow {
+      background-color: $opports-yellow;
+    }
+  }
+}

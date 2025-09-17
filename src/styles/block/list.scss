@@ -1,0 +1,17 @@
+@use "../../styles/utils" as *;
+
+.list {
+  margin-left: 20px;
+  list-style-image: url("../images/marker.svg");
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include on-tablet {
+    gap: 20px;
+  }
+
+  &__item {
+    padding-left: 17px;    
+  }
+}

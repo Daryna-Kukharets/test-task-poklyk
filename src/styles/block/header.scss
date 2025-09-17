@@ -1,0 +1,63 @@
+@use "../../styles/utils" as *;
+
+.header {
+  margin-top: 40px;
+
+  @include container;
+
+  @include on-tablet {
+    margin-top: 73px;
+  }
+
+  @include on-desktop {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+  }
+
+  &__block {
+    @include on-desktop {
+      width: 47%;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    
+    @include on-tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    @include on-tablet {
+      margin-top: 70px;
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+    @include on-desktop {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@use "./colors" as *;
+@use "./mixins" as *;
+
+%font-open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+%font-open-sans-medium {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+%font-open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+%h1 {
+  @extend %font-open-sans-bold;
+
+  font-size: 16px;
+  line-height: 3;
+  color: $blue-color;
+
+  @include on-tablet {
+    font-size: 22px;
+  }
+}
+
+%h2 {
+  @extend %font-open-sans-medium;
+
+  font-size: 28px;
+  line-height: 1;
+  color: $title-color;
+
+  @include on-tablet {
+    font-size: 42px;
+  }
+}
+
+%h3 {
+  @extend %font-open-sans-medium;
+
+  font-size: 18px;
+  line-height: 1;
+  color: $title-color;
+  
+  @include on-tablet {
+    font-size: 20px;
+  }
+}
+
+%p {
+  @extend %font-open-sans-regular;
+
+  font-size: 14px;
+  line-height: 1.75;
+  color: $text-color;
+
+  @include on-tablet {
+    font-size: 16px;
+  }
+}

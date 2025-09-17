@@ -1,0 +1,132 @@
+@use "../../styles/utils" as *;
+
+.about {
+  @include container;
+
+  &__box {
+    margin-top: 100px;
+
+    @include on-tablet {
+      margin-top: 130px;
+    }
+
+    @include on-desktop {
+      margin-top: 160px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include on-desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+    }
+  }
+
+  &__block-info {
+    @include on-desktop {
+      width: 47%;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.5;
+
+    @include on-tablet {
+      font-size: 32px;
+    }
+  }
+
+  &__paragraph {
+    margin-top: 24px;
+
+    @include on-tablet {
+      margin-top: 34px;
+    }
+  }
+
+  &__text {
+    margin-top: 14px;
+
+    @include on-tablet {
+      margin-top: 24px;
+    }
+  }
+
+  &__block-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+
+    @include on-tablet {
+      width: max-content;
+    }
+    
+    @include on-desktop {
+      width: 47%;
+      margin-bottom: 50px;
+      left: 0;
+      transform: translateX(0);
+    }
+
+    &--2 {
+      order: 1;
+
+      @include on-desktop {
+        order: -1;
+      }
+    }
+  }
+
+  &__img-bg {
+    width: 80%;
+
+    @include on-tablet {
+      width: 100%;
+    }
+  }
+
+  &__img-scale {
+    width: 30%;
+    position: absolute;
+
+    &--1 {
+      bottom: -16px; 
+      right: 0;
+
+      @include on-tablet {
+        right: -28px;
+      }
+    }
+
+    &--2 {
+      top: -12px;
+      right: 0;
+      
+      @include on-tablet {
+        right: -48px;
+      }
+    }
+
+    &--3 {
+      border-radius: 5px;
+      bottom: 12px;
+      width: 15%;
+      right: 12%;
+      
+      @include on-tablet {
+        width: auto;
+        right: 9px;
+      }
+    }
+
+    @include hover(transform scale(1.1));
+  }
+}

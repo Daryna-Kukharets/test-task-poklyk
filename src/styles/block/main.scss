@@ -1,0 +1,27 @@
+@use "../../styles/utils" as *;
+
+.main {
+  &__opports {
+    margin-top: 70px;
+    
+    @include on-tablet {
+      margin-top: 100px;
+    }
+    
+    @include on-desktop {
+      margin-top: 130px;
+    }
+  }
+
+  &__integrations {
+    margin-top: 100px;
+    
+    @include on-tablet {
+      margin-top: 130px;
+    }
+    
+    @include on-desktop {
+      margin-top: 160px;
+    }
+  }
+}
