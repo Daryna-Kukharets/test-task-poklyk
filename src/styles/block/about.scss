@@ -68,7 +68,7 @@
     @include on-tablet {
       width: max-content;
     }
-    
+
     @include on-desktop {
       width: 47%;
       margin-bottom: 50px;
@@ -87,6 +87,9 @@
 
   &__img-bg {
     width: 80%;
+    max-width: 504px;
+    height: auto;
+    margin: 0 auto;
 
     @include on-tablet {
       width: 100%;
@@ -94,12 +97,18 @@
   }
 
   &__img-scale {
-    width: 30%;
     position: absolute;
+    width: 30%;
+    height: auto;
+
+    @include on-tablet {
+      width: 100%;
+    }
 
     &--1 {
-      bottom: -16px; 
+      bottom: -16px;
       right: 0;
+      max-width: 176px;
 
       @include on-tablet {
         right: -28px;
@@ -109,7 +118,8 @@
     &--2 {
       top: -12px;
       right: 0;
-      
+      max-width: 253px;
+
       @include on-tablet {
         right: -48px;
       }
@@ -120,10 +130,15 @@
       bottom: 12px;
       width: 15%;
       right: 12%;
-      
+      max-width: 94px;
+
       @include on-tablet {
-        width: auto;
-        right: 9px;
+        width: 100%;
+        right: 10px;
+      }
+
+      @include on-desktop {
+        right: 25px;
       }
     }
 
